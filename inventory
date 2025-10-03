@@ -2,7 +2,7 @@
 localhost
 
 [localhost:vars]
-Course="DevOps from inventory"
+Course="DevOps From inventory"
 Trainer="Vihari"
 Duration="2 Months"
 

@@ -1,6 +1,6 @@
-- name: variables from inventory
+- name: variables from Plau level
   hosts: localhost
   tasks:
-  - name: show variables
+  - name: check variables
     ansible.builtin.debug:
-      msg: "I am learning {{ Course }}, my trainer is {{ trainer }} and course duration is {{ duration }}."
+      msg: "Hi, I am learning {{ Course }}, my trainer is {{ Trainer }} and course duration is {{ Duration }}."
