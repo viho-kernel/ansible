@@ -8,10 +8,10 @@
       name: "{{ item }}"
       state: present
 
-    loop:
+      loop:
       - Docker
-  - name: check whether installed or not
-    when: user.rc == 0
-    ansible.builtin.debug:
-      msg: "{{ item }} is installed"
-      
+
+  - name: check whether installed or not 
+    ansible.builtin.command:
+      cmd: docker --version
+      msg: "Docker is installed"
