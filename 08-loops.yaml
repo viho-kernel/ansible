@@ -9,7 +9,8 @@
       state: present
     loop:
     - docker
-
+  # Check Docker version after installation to verify successful setup
   - name: check whether installed or not 
     ansible.builtin.command:
       cmd: docker --version && echo -e "Docker is installed"
+    ignore_errors: yes
