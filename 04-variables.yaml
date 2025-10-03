@@ -7,5 +7,7 @@
   become: yes
   tasks:
   - name: show variables
+    vars:
+      duration: "3 months"
     ansible.builtin.debug:
       msg: "I am learning {{ Course }}, my trainer is {{ trainer }} and course duration is {{ duration }}."
