@@ -1,0 +1,32 @@
+- name: Data Types in ansible
+  hosts: localhost
+  vars:
+    NAME: Sivakumar
+    skills:
+      - Linux
+      - Ansible
+      - Docker
+      - Kubernetes
+    Experience:
+      devops: 2
+      testing: 3
+      admin: 5
+    Trainer: false
+    salary: 250000
+
+  tasks:
+  - name: show string variable
+    ansible.builtin.debug:
+      msg: "Name: {{ NAME }}"
+  - name: show list variable
+    ansible.builtin.debug:
+      msg: "Skills: {{ skills }}"
+  - name: show dict variable
+    ansible.builtin.debug:
+      msg: "Experience: {{ Experience }}"
+  - name: show boolean variable
+    ansible.builtin.debug:
+      msg: "Trainer: {{ Trainer }}"
+  - name: show integer variable
+    ansible.builtin.debug:
+      msg: "Salary: {{ salary }}" 
