@@ -9,8 +9,9 @@
       state: present
 
     loop:
-      - git
-      - mysql
-      - nginx
-      - postfix
-      - httpd
+      - Docker
+  - name: check whether installed or not
+    when: user.rc == 0
+    ansible.builtin.debug:
+      msg: "{{ item }} is installed"
+      
