@@ -1,7 +1,15 @@
 [web]
+54.164.159.100
+54.164.159.100
 
 [catalogue]
+54.164.159.100
+54.164.159.100
 
 [cart]
+54.164.159.100
 
 [roboshop:children]
+[web]
+[catalogue]
+[cart]
