@@ -9,7 +9,7 @@
       state: present
     loop:
     - docker
+
   - name: check whether installed or not 
     ansible.builtin.command:
-      cmd: docker --version
-      msg: "Docker is installed"
+      cmd: docker --version && echo -e "Docker is installed"
